@@ -127,8 +127,8 @@
                 $nome_campo = $nome_campo.'_'.rand();
             }
 
-            $campos_criterio = $dado;
-            $nome_campo = $dado;
+            $campos_criterio[] = $nome_campo;
+            $$nome_campo = $dado;
         }
 
         $instrucao = select($entidade, $campos, $coringa_criterio, $ordem);
