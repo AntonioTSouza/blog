@@ -40,8 +40,9 @@
                     }
                     
                     $data_atual = date('Y-m-d H:i:s');
+                    
                     $criterio = [
-                        ['data_postagem', '=', $data_atual]
+                        ['data_postagem', '<=', $data_atual]
                     ];
 
                     if(!empty($busca)){
@@ -69,6 +70,7 @@
                 <div>
                     <div class="list-group">
                         <?php
+                    
                             foreach($posts as $post):
                                 $data = date_create($post['data_postagem']);
                                 $data = date_format($data, 'd/m/Y H:i:s');
