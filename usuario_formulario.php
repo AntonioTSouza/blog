@@ -12,6 +12,11 @@
             <div class="col-md-12">
                 <?php include 'includes/topo.php';?>
             </div>
+        </div>
+        <div class="row" style="min-height: 500px;">
+            <div class="col-md-12">
+                <?php include 'includes/menu.php' ?>
+            </div>
             <div class="col-md-10" style="padding-top: 50px;">
                 <?php
                     require_once 'includes/funcoes.php';
@@ -44,7 +49,7 @@
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="text" name="email" id="email" class="form-control" require="required" value="<?php echo $entidade•['email'] ?? ''?>">
+                        <input type="text" name="email" id="email" class="form-control" require="required" value="<?php echo $entidade['email'] ?? ''?>">
                     </div>
                     <?php if(!isset($_SESSION['login'])): ?>
                     <div class="form-group">
@@ -59,9 +64,11 @@
             </div>
         </div>
         <div class="row">
-            <?php include 'includes/rodape.php' ?>
+            <div class="col-md-12">
+                <?php include 'includes/rodape.php'; ?>
+            </div>            
         </div>
     </div>
-    <script src="lib/bootstrap-4.2.1-dist/js/bootstrapt.min.js">    </script>
+    <script src="lib/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

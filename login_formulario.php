@@ -7,7 +7,7 @@
     <title>Login | Projeto para Web com PHP</title>
 </head>
 <body>
-    <div class="conatiner">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <?php include 'includes/topo.php'; ?>
