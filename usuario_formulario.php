@@ -42,7 +42,7 @@
                 <h2>Usuário</h2>
                 <form action="core/usuario_repositorio.php" method="post">
                     <input type="hidden" name="acao" value="<?php echo empty($id) ? 'insert' : 'update'; ?>">
-                    <input type="hidden" name="id" value="<?php echo empty($id) ?? '' ?>">
+                    <input type="hidden" name="id" value="<?php echo $entidade['id'] ?? '' ?>">
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome" class="form-control" require="required" value="<?php echo $entidade['nome'] ?? '' ?>">
